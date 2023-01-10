@@ -21,6 +21,7 @@ public class Minecraft_Anime_Ultimate {
 
     public static final String MOD_ID = "mau";
     private static final Logger LOGGER = LogUtils.getLogger();
+    // Added Important Comment
     public Minecraft_Anime_Ultimate()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
