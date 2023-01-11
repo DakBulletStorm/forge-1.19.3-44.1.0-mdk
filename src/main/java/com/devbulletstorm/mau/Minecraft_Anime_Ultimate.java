@@ -1,5 +1,6 @@
 package com.devbulletstorm.mau;
 
+import com.devbulletstorm.mau.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
@@ -25,6 +26,8 @@ public class Minecraft_Anime_Ultimate {
     public Minecraft_Anime_Ultimate()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
