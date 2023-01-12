@@ -40,7 +40,11 @@ public class Minecraft_Anime_Ultimate {
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
     }
-
+    //private void addCreative(CreativeModeTabEvent.BuildContents event)
+    //{
+    //    if (event.getTab() == CreativeModeTabs.)
+    //        event.accept(EXAMPLE_BLOCK_ITEM);
+    //}
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
