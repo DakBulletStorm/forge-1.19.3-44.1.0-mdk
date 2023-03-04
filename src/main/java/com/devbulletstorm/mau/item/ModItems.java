@@ -12,9 +12,8 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Minecraft_Anime_Ultimate.MOD_ID);
 
     public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAU_TAB)));
-    public static final RegistryObject<Item> DAGGER = ITEMS.register("dagger",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAU_TAB)));
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
