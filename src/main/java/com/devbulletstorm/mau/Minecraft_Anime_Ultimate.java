@@ -1,5 +1,6 @@
 package com.devbulletstorm.mau;
 
+import com.devbulletstorm.mau.item.ModCreativeModeTabs;
 import com.devbulletstorm.mau.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -51,8 +52,9 @@ public class Minecraft_Anime_Ultimate {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS){
+        if(event.getTab() == ModCreativeModeTabs.MINECRAFT_ANIME_ULTIMATE_TAB){
             event.accept(ModItems.SPEAR);
+            event.accept(ModItems.DAGGER);
         }
     }
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
